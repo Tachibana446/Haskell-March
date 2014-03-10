@@ -1,2 +1,6 @@
-rightTriangles = [(a,b,c) | c <- [1..10] , a <- [1..c] , b <- [1..a], a^2 + b^2 == c^2,a+b+c == 24]
+tell :: (Show a) => [a] -> String
+tell [] = "The list is empty"
+tell (x:[]) = "The list has one element: " ++ show x 
+tell (x:y:[]) = "The list has two elements: " ++ show x ++ " and " ++ show y
+tell (x:y:_) = "The list is long . The first two elements are: " ++ show x ++ " and " ++ show y
 
