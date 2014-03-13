@@ -8,4 +8,8 @@ bmiTell weight height
           skinny = 18.5
           normal = 25.0
           fat = 30.0 
+
+calcBmis :: [(Double , Double)] -> [Double]
+calcBmis xs = [bmi w h | (w,h) <- xs]
+    where bmi weight height = weight / height ^ 2
  
