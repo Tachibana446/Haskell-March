@@ -10,5 +10,5 @@ bmiTell weight height
           fat = 30.0 
 
 calcBmis :: [(Double , Double)] -> [Double]
-calcBmis xs = [bmi | (w,h) <- xs, let bmi = w / h ^ 2 ]
+calcBmis xs = [bmi | (w,h) <- xs, let bmi = w / h ^ 2 , bmi > 25.0]
  
