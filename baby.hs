@@ -1,5 +1,3 @@
-reverse' :: [a] -> [a]
-reverse' [] = []
-reverse' (x:xs) = reverse' xs ++ [x]
-
+compareWithHundred :: Int -> Ordering
+compareWithHundred x = compare 100 x
 
